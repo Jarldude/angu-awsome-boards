@@ -1,0 +1,56 @@
+.card-custom{
+    width: 400px;
+    max-height: 420px;
+    text-align: center;
+}
+.card-header-custom{
+    text-align: center;
+}
+.avatar-custom{
+    border-radius: 50%;
+}
+.input-custom{
+    margin-top: 15px;
+}
+.column-custom{
+   
+    display: flex;
+    width: auto;
+    min-height: 100%;
+    justify-content: center;
+}
+.card-footer-custom{
+    text-align: center;
+}
+.button-custom{
+    margin-left: 15px;
+}
+.heading-custom{
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+.err-msg{
+    text-align: center;
+    -webkit-animation: NAME-YOUR-ANIMATION 1s; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION 1s; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION 1s; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION 1s; /* IE 10+, Fx 29+ */
+
+}
+
+@-webkit-keyframes NAME-YOUR-ANIMATION {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes NAME-YOUR-ANIMATION {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes NAME-YOUR-ANIMATION {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes NAME-YOUR-ANIMATION {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }

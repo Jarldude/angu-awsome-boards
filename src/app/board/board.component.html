@@ -1,0 +1,46 @@
+ 
+ <nb-card class="outer-card">
+    <nb-card-header class="card-header-custom">
+        <small class="caption-2 text-disabled">{{ board.id }}</small>
+        <nb-icon cdkDragHandle class="handle" icon="move-outline" status="default"></nb-icon>
+    </nb-card-header>
+
+    <nb-card-header>
+        <h5 class="my-text">{{ board.title }}</h5>
+        <hr class="underline-custom"/> 
+    </nb-card-header>
+
+    <nb-card-body>
+
+        <div
+            class="tasks"
+            cdkDropList
+            cdkDropListOrientation="vertical"
+            (cdkDropListDropped)="taskDrop($event)">
+
+            <div
+                class="inner-card-iterrator"
+                cdkDrag
+                *ngFor="let task of board.tasks; let i = index"
+                (click)="openDialog(task, i)">
+                <nb-card [ngClass]="task.label" class="nb-card-inner-card-custom"> 
+                    <nb-card-header class="card-header-custom">
+                            <span>{{ task.description }}</span>
+                    </nb-card-header> 
+                </nb-card>
+            </div>
+        </div>
+
+
+    </nb-card-body>
+
+    <nb-card-footer class="nb-card-footer-custom">
+        <button nbButton outline status="success" (click)="openDialog()">
+            <nb-icon icon="plus"></nb-icon>
+        </button>
+
+        <button nbButton  outline  status="danger" (click)="handleDelete()">
+            <nb-icon icon="trash"></nb-icon>
+        </button>
+    </nb-card-footer>
+  </nb-card>

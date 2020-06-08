@@ -1,0 +1,75 @@
+.outer-card {
+    margin: 1rem;
+    min-width: 400px;
+    max-width: 400px;
+    padding: 2px;
+    background: #212121;
+  }
+
+  .inner-card-iterrator {
+    cursor: pointer;
+  }
+
+  .card-header-custom{
+    display: flex;
+    span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: black;
+    }
+  }
+
+
+
+  .handle {
+    margin-left: auto;
+    cursor: move;
+  }
+
+  .cdk-drag-animating {
+    transition: transform 300ms ease;
+  }
+  .tasks.cdk-drop-list-dragging .cdk-drag {
+    transition: transform 300ms ease;
+  }
+  .cdk-drag-placeholder {
+    opacity: 0.5;
+  }
+
+  .blue { background: #71deff; color: black; }
+  .green { background: #36e9b6; color: black;  }
+  .yellow { background: #ffcf44; color: black; }
+  .purple { background: #b15cff; }
+  .red { background: #e74a4a; }
+  .gray { background: gray; text-decoration: line-through};
+
+
+
+  .my-text {
+    font-family: nb-theme(font-family-primary);
+    font-weight: 100;
+    color: nb-theme(text-basic-color);
+    text-transform: uppercase;
+  }
+  hr{
+    opacity: 0.3;
+  }
+  .nb-card-footer-custom{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nb-card-inner-card-custom{
+    min-height: 50px;
+  }
+  .ellipsis { 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+
+  .my-description-text {
+    font-family: nb-theme(font-family-primary);
+    color: black;
+  }
